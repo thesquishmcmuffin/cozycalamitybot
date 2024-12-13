@@ -1,0 +1,44 @@
+[twitch.auth]
+client_id = ""
+client_secret = ""
+redirect_uri = "http://localhost:3000"
+
+[twitch.info]
+channel = ""
+bot_account = ""
+channel_id = ""
+
+[twitch.scopes]
+bot_scope = "chat%3Aread+chat%3Aedit"
+broad_scope = "channel%3Amanage%3Apredictions+moderation%3Aread"
+
+[messages]
+pred_begin_message = "🎰🚨🎰BETS ARE OPEN, any gamblers? modCheck 🎰🚨🎰"
+pred_reminder_message = "🚨30 seconds left VeryPog make your bets NOW🚨"
+pred_lock_prefix = "🎰BETS ARE CLOSED🎰"
+pred_lock_suffix = "PauseFish"
+pred_winner_prefix = "GIGACHAD"
+pred_loser_prefix = "xdd"
+pred_cancel_message = "Prediction canceled SadgeCry"
+action_denied_message = "You can't do that :)"
+
+[permissions]
+grant_mods = true
+grant_vips = false
+
+[hotkeys]
+enabled = true
+resolve_1 = "control + 1"
+resolve_2 = "control + 2"
+resolve_3 = "control + 3"
+resolve_4 = "control + 4"
+lock = "control + 5"
+cancel = "control + 6"
+
+[socket]
+host = "127.0.0.1"
+port = 3000
+
+[livesplit]
+host = "127.0.0.1"
+port = 16834
